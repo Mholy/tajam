@@ -125,6 +125,10 @@ h5 {
     font-family: 'Playfair Display', serif;
 }
 
+p {
+    margin: 0;
+}
+
 /*=====  End of Overall  ======*/
 
 /*===============================
@@ -266,15 +270,20 @@ h5 {
 }
 
 .about img {
-    float: left;
-    margin-left: 70px;
+    margin-left: 35px;
 }
 
 .about h2 {
+    margin-bottom: 25px;
     font-size: 22px;
     font-weight: 700;
     text-transform: uppercase;
     color: #413D4B;
+}
+
+.about p {
+    margin-bottom: 30px;
+    line-height: 22px;
 }
 
 /*=====  End of Section "About"  ======*/
