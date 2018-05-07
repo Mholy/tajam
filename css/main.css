@@ -13,7 +13,7 @@
 html {
     color: #222;
     font-size: 1em;
-    line-height: 1.4;
+    line-height: 1.2;
 }
 
 /*
@@ -97,7 +97,6 @@ textarea {
 
  .container-center {
     width: 960px;
-    padding-bottom: 70px;
     margin: 0 auto;
 }
 
@@ -213,9 +212,13 @@ h5 {
 }
 
 .header-bottom h1 {
-    padding-bottom: 25px;
+    margin-bottom: 25px;
     font-size: 32px;
     font-weight: 900;
+}
+
+.header-bottom p {
+    line-height: 26px;
 }
 
 .separator {
@@ -226,9 +229,7 @@ h5 {
 }
 
 .header-bottom p {
-    margin: 0;
-    padding: 0;
-    padding-top: 30px;
+    margin-top: 30px;
     margin-bottom: 50px;
 }
 
