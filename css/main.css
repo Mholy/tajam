@@ -111,7 +111,7 @@ body {
     font-weight: 300;
     font-size: 14px;
     color: #413D4B;
-    
+
     background: #FFF;
 }
 
@@ -127,6 +127,11 @@ h5 {
 
 p {
     margin: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /*=====  End of Overall  ======*/
@@ -147,7 +152,6 @@ p {
     font-size: 16px;
     line-height: 38px;
     color: #00e0d0;
-    text-decoration: none;
     text-transform: uppercase;
 }
 
@@ -265,7 +269,7 @@ p {
 =            Section "About"           =
 ===============================*/
 
-.about {
+.about .container-center{
     padding: 70px 0;
 }
 
