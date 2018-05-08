@@ -269,7 +269,7 @@ p {
     padding: 70px 0;
 }
 
-.about img {
+.section-logo {
     margin-left: 35px;
 }
 
@@ -286,18 +286,40 @@ p {
     line-height: 22px;
 }
 
+.about-video {
+    height: 550px;
+    width: 100%;
+    display: table;
+    text-align: center;
+
+    background-image: linear-gradient(to right, rgba(9, 5, 47, .85),rgba(49, 29, 94, .85)), url(../img/image-video.jpg);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+
+.about-video-caption {
+    display: table-cell;
+    vertical-align: middle;
+    height: 150px;
+}
+
+.btn-video {
+    display: block;
+}
+
+.about-video strong {
+    display: block;
+    margin-top: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 16px;
+}
+
 /*=====  End of Section "About"  ======*/
-
-
-
-
-
-
-
-
-
-
-
 
 
 
