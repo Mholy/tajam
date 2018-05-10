@@ -302,6 +302,7 @@ a {
 .about p {
     margin-bottom: 30px;
     line-height: 22px;
+    color: rgba(65,61,75,.75);
 }
 
 .about-video {
