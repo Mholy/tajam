@@ -501,6 +501,70 @@ a {
 
 /*=====  End of Section Portfolio  ======*/
 
+/*======================================
+=            Section People            =
+======================================*/
+
+.people {
+    height: 500px;
+    padding: 70px 0;
+    text-align: center;
+    color: #FFF;
+    background-image: linear-gradient(to right, rgba(9,5,47,.85),rgba(49,29,94,.85)), url(../img/image-people.jpg);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+}
+
+.people-quote {
+    margin-top: 40px;
+    margin-bottom: 45px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(255,255,255,.85);
+}
+
+.people h3 + p {
+    margin-top: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.7);
+}
+
+.people-select {
+    margin-top: 40px;
+}
+
+.people-select a {
+    display: inline-block;
+}
+
+.people-select a {
+    margin-right: 15px;
+}
+
+.people-select a:first-child {
+    margin-right: 30px;
+}
+
+.people-select a:last-child {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+/* .people-nav-back {
+    margin-right: 30px;
+}
+
+.people-nav-forward {
+    margin-left: 30px;
+    margin-right: 0;
+} */
+
+/*=====  End of Section People  ======*/
+
+
 
 /* ==========================================================================
    Helper classes
