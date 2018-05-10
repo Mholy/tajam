@@ -95,6 +95,13 @@ textarea {
      padding: 0 10px;
  }
 
+ .container-fixed {
+    width: 1600px;
+    margin: 0 auto;
+    background-color: #FFF;
+
+ }
+
  .container-center {
     width: 960px;
     margin: 0 auto;
@@ -111,8 +118,7 @@ body {
     font-weight: 300;
     font-size: 14px;
     color: #413D4B;
-
-    background: #FFF;
+    background-color: #C3C3C3;
 }
 
 h1,
@@ -462,6 +468,38 @@ a {
 
 /*=====  End of Section Team  ======*/
 
+/*=========================================
+=            Section Portfolio            =
+=========================================*/
+
+.portfolio {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.portfolio-heading h2 {
+    display: inline-block;
+    float: left;
+    line-height: 22px;
+}
+
+.portfolio-heading a {
+    display: inline-block;
+    float: right;
+    color: #413D4B;
+    text-decoration: none;
+    line-height: 22px;
+}
+
+.portfolio-heading img {
+    margin-left: 5px;
+}
+
+.portfolio-images {
+    margin: 70px 0;
+}
+
+/*=====  End of Section Portfolio  ======*/
 
 
 /* ==========================================================================
