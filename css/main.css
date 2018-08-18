@@ -169,6 +169,7 @@ a {
     display: inline-block;
     padding: 0 15px;
 
+    background-color: inherit;
     border: 1px solid #00e0d0;
     -webkit-border-radius: 2px;
             border-radius: 2px;
@@ -178,6 +179,10 @@ a {
     line-height: 38px;
     color: #00e0d0;
     text-transform: uppercase;
+}
+
+.btn-wide {
+    padding: 0 30px;
 }
 
 /*=====  End of Buttons  ======*/
@@ -553,17 +558,64 @@ a {
     margin-left: 15px;
 }
 
-/* .people-nav-back {
-    margin-right: 30px;
-}
-
-.people-nav-forward {
-    margin-left: 30px;
-    margin-right: 0;
-} */
-
 /*=====  End of Section People  ======*/
 
+/*=======================================
+=            Section Contact            =
+=======================================*/
+
+.contact {
+    padding: 70px 0;
+}
+
+.contact h2 {
+    margin-bottom: 35px;
+}
+
+.contact input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border: 1px solid #e5e5e5;
+    line-height: 1em;
+}
+
+.contact input:last-child {
+    margin-bottom: 0;
+}
+
+.contact textarea {
+    height: 200px;
+    width: 100%;
+    resize: none;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+}
+
+.contact-clients {
+    vertical-align: top;
+}
+
+.contact-clients-left {
+    float: left;
+}
+
+.contact-clients-right {
+    float: right;
+}
+
+.contact-clients img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.contact-clients img:last-child {
+    margin-bottom: 0;
+}
+/*=====  End of Section Contact  ======*/
 
 
 /* ==========================================================================
