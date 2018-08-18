@@ -148,6 +148,7 @@ h3 {
     font-size: 14px;
     font-weight: 900;
     text-transform: uppercase;
+    letter-spacing: 0.7px;
 }
 
 p {
@@ -616,6 +617,124 @@ a {
     margin-bottom: 0;
 }
 /*=====  End of Section Contact  ======*/
+
+/*======================================
+=            Section Footer            =
+======================================*/
+
+.footer {
+    padding: 70px 0;
+    color: #FFF;
+    background-image: linear-gradient(to right, rgba(9,5,47,.85),rgba(49,29,94,.85)), url(../img/image-footer.jpg);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+}
+
+.logo-footer {
+    margin-bottom: 18px;
+}
+
+.footer h3 {
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.footer p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0.35px;
+}
+
+.footer-address,
+.footer-phone {
+    padding-left: 30px;
+}
+
+.footer-address {
+    background-image: url(../img/icon-footer-location.png);
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+}
+
+.footer-phone {
+    background-image: url(../img/icon-footer-phone.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.footer input {
+    width: 210px;
+    height: 45px;
+    vertical-align: middle;
+    padding-left: 15px;
+    border: 1px solid #ffffff;
+    margin-right: 10px;
+    letter-spacing: 0.7px;
+    background-color: rgba(0,0,0,0);
+    opacity: 0.5;
+}
+
+.footer form {
+    margin-bottom: 25px;
+}
+
+.btn-subscribe {
+    width: 70px;
+    height: 45px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    opacity: 0.5;
+}
+
+.icon-social-dribbble,
+.icon-social-facebook,
+.icon-social-gplus,
+.icon-social-instagram,
+.icon-social-twitter,
+.icon-social-youtube {
+    display: inline-block;
+    margin-right: 8px;
+    background: url('../img/sprite-social.png') no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.icon-social-dribbble { background-position: -5px -0px; width: 35px; height: 35px; }
+.icon-social-facebook { background-position: -45px -0px; width: 35px; height: 35px; }
+.icon-social-gplus { background-position: -5px -40px; width: 35px; height: 35px; }
+.icon-social-instagram { background-position: -45px -40px; width: 35px; height: 35px; }
+.icon-social-twitter { background-position: -5px -80px; width: 35px; height: 35px; }
+.icon-social-youtube { background-position: -45px -80px; width: 35px; height: 35px; }
+
+.footer-bottom-line {
+    margin-top: 70px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    line-height: 26px;
+}
+
+.footer-bottom-line p {
+    float: right;
+}
+.footer-menu {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu li {
+    display: inline-block;
+    padding-right: 30px;
+    text-transform: uppercase;
+}
+
+.footer-menu li:last-child {
+    padding-right: 0;
+}
+
+/*=====  End of Section Footer  ======*/
 
 
 /* ==========================================================================
