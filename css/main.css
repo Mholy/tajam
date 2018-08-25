@@ -1,0 +1,911 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*==============================
+=            Layout            =
+==============================*/
+
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+ .pure-g [class *= "pure-u"] {
+    font-family: 'Roboto', sans-serif;
+ }
+
+ .l-box {
+     padding: 0 10px;
+ }
+
+ .container-fixed {
+    width: 1600px;
+    margin: 0 auto;
+    background-color: #FFF;
+
+ }
+
+ .container-center {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*=====  End of Layout  ======*/
+
+/*===============================
+=            Overall            =
+===============================*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #413D4B;
+    background-color: #C3C3C3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*=====  End of Overall  ======*/
+
+/*===============================
+=            Buttons            =
+===============================*/
+
+.btn {
+    display: inline-block;
+    padding: 0 15px;
+
+    background-color: inherit;
+    border: 1px solid #00e0d0;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+    line-height: 38px;
+    color: #00e0d0;
+    text-transform: uppercase;
+}
+
+.btn-wide {
+    padding: 0 30px;
+}
+
+/*=====  End of Buttons  ======*/
+
+
+/*==============================
+=            header            =
+==============================*/
+.header-top {
+    margin-bottom: 160px;
+}
+
+.header-main {
+    height: 670px;
+    position: relative;
+
+    color: #FFF;
+
+    background-image: linear-gradient(to right, rgba(9, 5, 47, .85),rgba(49, 29, 94, .85)), url(../img/image-header.jpg);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+
+.header-logo {
+    display: block;
+    float: left;
+    width: 130px;
+    margin-top: 15px;
+}
+
+.header-menu {
+    display: block;
+    float: right;
+    margin-top: 35px;
+}
+
+.header-menu ul {
+    margin: 0;
+    padding: 0;
+
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.header-menu li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.header-menu a:hover {
+    color: #00e0d0;
+}
+
+.header-bottom {
+    text-align: center;
+}
+
+.header-bottom h1 {
+    margin-bottom: 25px;
+}
+
+.header-bottom p {
+    line-height: 26px;
+}
+
+.separator {
+    width: 50px;
+    margin: 0 auto;
+    height: 1px;
+    background-color: #00e0d0;
+}
+
+.header-bottom p {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.slider-nav {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.slider-nav a {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    border: 1px solid #c2c2c2;
+}
+
+.slider-nav-active {
+    background-color: #00e0d0;
+    border: none;
+}
+
+/*=====  End of header  ======*/
+
+/*===============================
+=            Section "About"           =
+===============================*/
+
+.about .container-center{
+    padding: 70px 0;
+}
+
+.section-logo {
+    margin-left: 35px;
+}
+
+.about h2 {
+    margin-bottom: 25px;
+    color: #413D4B;
+}
+
+.about p {
+    margin-bottom: 30px;
+    line-height: 22px;
+    color: rgba(65,61,75,.75);
+}
+
+.about-video {
+    height: 550px;
+    width: 100%;
+    display: table;
+    text-align: center;
+
+    background-image: linear-gradient(to right, rgba(9, 5, 47, .85),rgba(49, 29, 94, .85)), url(../img/image-video.jpg);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+
+.about-video-caption {
+    display: table-cell;
+    vertical-align: middle;
+    height: 150px;
+}
+
+.btn-video {
+    display: block;
+}
+
+.about-video strong {
+    display: block;
+    margin-top: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 16px;
+}
+
+/*=====  End of Section "About"  ======*/
+
+/*=====================================
+=            Section expertise            =
+=====================================*/
+
+.expertise {
+    text-align: center;
+    padding: 70px 0;
+}
+
+.expertise-heading {
+    margin-bottom: 50px;
+}
+
+.expertise-heading span {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    line-height: 45px;
+    color: #2F2D35;
+    color: rgba(47,45,53,.75);
+}
+
+.expertise-heading .separator {
+    height: 2px;
+    background-color: #2F2D35;
+    background-color: rgba(47,45,53,.3);
+}
+
+.expertise-item {
+    padding: 35px 30px;
+}
+
+.expertise-item img {
+    margin-bottom: 30px;
+}
+
+.expertise-item h3 {
+    margin-bottom: 20px;
+}
+
+.expertise-item p {
+    color: rgba(51,51,51,.75)
+}
+
+.expertise-item:nth-child(-n+3) {
+    border-bottom: 1px solid #000;
+    border-bottom: 1px solid rgba(0,0,0,.08);
+}
+
+.expertise-item {
+    border-right: 1px solid #000;
+    border-right: 1px solid rgba(0,0,0,.08);
+}
+
+.expertise-item:nth-child(3n) {
+    border-right: none;
+}
+
+
+/*=====  End of Section expertise  ======*/
+
+/*====================================
+=            Section Team            =
+====================================*/
+
+.teams {
+    padding: 70px 0;
+    text-align: center;
+    color: #FFF;
+    background-image: linear-gradient(to right, rgba(9,5,47,.85),rgba(49,29,94,.85)), url(../img/image-section.jpg);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+
+.teams-heading {
+    margin-bottom: 50px;
+}
+
+.teams-heading span {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    line-height: 45px;
+    color: #F9F9F9;
+}
+
+.teams-heading .separator {
+    height: 2px;
+    background-color: #FFF;
+    background-color: rgba(255,255,255,.2);
+}
+
+.teams figure {
+    margin: 0;
+    width: 220px;
+    cursor: pointer;
+}
+
+.teams figcaption {
+    padding: 20px 0;
+    border: 1px solid #e7e7e7;
+    border-color: rgba(231,231,231,.5);
+}
+
+.teams-members span {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.teams-members {
+    margin-bottom: 70px;
+}
+
+.teams .btn {
+    margin-top: 30px;
+}
+
+/*=====  End of Section Team  ======*/
+
+/*=========================================
+=            Section Portfolio            =
+=========================================*/
+
+.works {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.works-heading h2 {
+    display: inline-block;
+    float: left;
+    line-height: 22px;
+}
+
+.works-heading a {
+    display: inline-block;
+    float: right;
+    color: #413D4B;
+    text-decoration: none;
+    line-height: 22px;
+}
+
+.works-heading img {
+    margin-left: 5px;
+}
+
+.works-images {
+    margin: 70px 0;
+}
+
+/*=====  End of Section Portfolio  ======*/
+
+/*======================================
+=            Section People            =
+======================================*/
+
+.people {
+    height: 500px;
+    padding: 70px 0;
+    text-align: center;
+    color: #FFF;
+    background-image: linear-gradient(to right, rgba(9,5,47,.85),rgba(49,29,94,.85)), url(../img/image-people.jpg);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+}
+
+.people-quote {
+    margin-top: 40px;
+    margin-bottom: 45px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(255,255,255,.85);
+}
+
+.people h3 + p {
+    margin-top: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.7);
+}
+
+.people-select {
+    margin-top: 40px;
+}
+
+.people-select a {
+    display: inline-block;
+}
+
+.people-select a {
+    margin-right: 15px;
+}
+
+.people-select a:first-child {
+    margin-right: 30px;
+}
+
+.people-select a:last-child {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+/*=====  End of Section People  ======*/
+
+/*=======================================
+=            Section Contact            =
+=======================================*/
+
+.contact {
+    padding: 70px 0;
+}
+
+.contact h2 {
+    margin-bottom: 35px;
+}
+
+.contact input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border: 1px solid #e5e5e5;
+    line-height: 1em;
+}
+
+.contact input:last-child {
+    margin-bottom: 0;
+}
+
+.contact textarea {
+    height: 200px;
+    width: 100%;
+    resize: none;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+}
+
+.contact-clients {
+    vertical-align: top;
+}
+
+.contact-clients-left {
+    float: left;
+}
+
+.contact-clients-right {
+    float: right;
+}
+
+.contact-clients img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.contact-clients img:last-child {
+    margin-bottom: 0;
+}
+/*=====  End of Section Contact  ======*/
+
+/*======================================
+=            Section Footer            =
+======================================*/
+
+.footer {
+    padding: 70px 0;
+    color: #FFF;
+    background-image: linear-gradient(to right, rgba(9,5,47,.85),rgba(49,29,94,.85)), url(../img/image-footer.jpg);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+}
+
+.logo-footer {
+    margin-bottom: 18px;
+}
+
+.footer h3 {
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.footer p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0.35px;
+}
+
+.footer-address,
+.footer-phone {
+    padding-left: 30px;
+}
+
+.footer-address {
+    background-image: url(../img/icon-footer-location.png);
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+}
+
+.footer-phone {
+    background-image: url(../img/icon-footer-phone.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.footer input {
+    width: 210px;
+    height: 45px;
+    vertical-align: middle;
+    padding-left: 15px;
+    border: 1px solid #ffffff;
+    margin-right: 10px;
+    letter-spacing: 0.7px;
+    background-color: rgba(0,0,0,0);
+    opacity: 0.5;
+}
+
+.footer form {
+    margin-bottom: 25px;
+}
+
+.btn-subscribe {
+    width: 70px;
+    height: 45px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    opacity: 0.5;
+}
+
+.icon-social-dribbble,
+.icon-social-facebook,
+.icon-social-gplus,
+.icon-social-instagram,
+.icon-social-twitter,
+.icon-social-youtube {
+    display: inline-block;
+    margin-right: 8px;
+    background: url('../img/sprite-social.png') no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.icon-social-dribbble { background-position: -5px -0px; width: 35px; height: 35px; }
+.icon-social-facebook { background-position: -45px -0px; width: 35px; height: 35px; }
+.icon-social-gplus { background-position: -5px -40px; width: 35px; height: 35px; }
+.icon-social-instagram { background-position: -45px -40px; width: 35px; height: 35px; }
+.icon-social-twitter { background-position: -5px -80px; width: 35px; height: 35px; }
+.icon-social-youtube { background-position: -45px -80px; width: 35px; height: 35px; }
+
+.footer-bottom-line {
+    margin-top: 70px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    line-height: 26px;
+}
+
+.footer-bottom-line p {
+    float: right;
+}
+.footer-menu {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu li {
+    display: inline-block;
+    padding-right: 30px;
+    text-transform: uppercase;
+}
+
+.footer-menu li:last-child {
+    padding-right: 0;
+}
+
+/*=====  End of Section Footer  ======*/
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
