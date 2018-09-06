@@ -11,7 +11,12 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <!--<![endif]-->
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display:400,700,900|Roboto:100,300,400,900" rel="stylesheet">
 </head>
@@ -70,10 +75,12 @@
 
         <section class="about">
             <div class="container-center pure-g">
-                <div class="pure-u-5-12 l-box">
-                    <img class="section-logo" src="img/logo-section.png" alt="Tajam Logo">
+                <div class="pure-u-sm-1-12"></div>
+                <div class="pure-u-sm-1-4">
+                    <img class="pure-img about-logo" class="section-logo" src="img/logo-section.png" alt="Tajam Logo">
                 </div>
-                <div class="pure-u-7-12 l-box">
+                <div class="pure-u-sm-1-12"></div>
+                <div class="pure-u-1 pure-u-sm-7-12 l-box">
                     <h2>Our Story</h2>
                     <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
                     <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
@@ -197,7 +204,7 @@
 <!--====  End of Section Teams  ====-->
 
 <!--=======================================
-=            Section Works            =
+=            Section Portfolio            =
 ========================================-->
 
         <section class="works">
@@ -208,21 +215,43 @@
                 </div>
             </div>
             <div class="works-images">
-                <div class="works-images-top">
-                    <img src="http://via.placeholder.com/267x200" alt="Our works"><!--
-                     --><img src="http://via.placeholder.com/267x200" alt="Our works"><!--
-                     --><img src="http://via.placeholder.com/267x200" alt="Our works"><!--
-                     --><img src="http://via.placeholder.com/267x200" alt="Our works"><!--
-                     --><img src="http://via.placeholder.com/266x200" alt="Our works"><!--
-                     --><img src="http://via.placeholder.com/266x200" alt="Our works">
-                </div>
-                <div class="works-images-bottom">
-                    <img src="http://via.placeholder.com/267x200" alt="Our works"><!--
-                     --><img src="http://via.placeholder.com/267x200" alt="Our works"><!--
-                     --><img src="http://via.placeholder.com/267x200" alt="Our works"><!--
-                     --><img src="http://via.placeholder.com/267x200" alt="Our works"><!--
-                     --><img src="http://via.placeholder.com/266x200" alt="Our works"><!--
-                     --><img src="http://via.placeholder.com/266x200" alt="Our works">
+                <div class="pure-g">
+                    <div class="pure-u-1-4 pure-u-lg-1-6">
+                        <img class="pure-img" src="http://via.placeholder.com/267x200" alt="Our works">
+                    </div>
+                    <div class="pure-u-1-4 pure-u-lg-1-6">
+                        <img class="pure-img" src="http://via.placeholder.com/267x200" alt="Our works">
+                    </div>
+                    <div class="pure-u-1-4 pure-u-lg-1-6">
+                        <img class="pure-img" src="http://via.placeholder.com/267x200" alt="Our works">
+                    </div>
+                    <div class="pure-u-1-4 pure-u-lg-1-6">
+                        <img class="pure-img" src="http://via.placeholder.com/267x200" alt="Our works">
+                    </div>
+                    <div class="pure-u-1-4 pure-u-lg-1-6">
+                        <img class="pure-img" src="http://via.placeholder.com/266x200" alt="Our works">
+                    </div>
+                    <div class="pure-u-1-4 pure-u-lg-1-6">
+                        <img class="pure-img" src="http://via.placeholder.com/266x200" alt="Our works">
+                    </div>
+                    <div class="pure-u-1-4 pure-u-lg-1-6">
+                        <img class="pure-img" src="http://via.placeholder.com/267x200" alt="Our works">
+                    </div>
+                    <div class="pure-u-1-4 pure-u-lg-1-6">
+                        <img class="pure-img" src="http://via.placeholder.com/267x200" alt="Our works">
+                    </div>
+                    <div class="pure-u-1-4 pure-u-lg-1-6">
+                        <img class="pure-img" src="http://via.placeholder.com/267x200" alt="Our works">
+                    </div>
+                    <div class="pure-u-1-4 pure-u-lg-1-6">
+                        <img class="pure-img" src="http://via.placeholder.com/267x200" alt="Our works">
+                    </div>
+                    <div class="pure-u-1-4 pure-u-lg-1-6">
+                        <img class="pure-img" src="http://via.placeholder.com/266x200" alt="Our works">
+                    </div>
+                    <div class="pure-u-1-4 pure-u-lg-1-6">
+                        <img class="pure-img" src="http://via.placeholder.com/266x200" alt="Our works">
+                    </div>
                 </div>
             </div>
             <a href="#" class="btn btn-wide">Load More</a>

@@ -823,8 +823,23 @@ a {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 1600px) {
+    .container-fixed {
+        width: auto;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .container-center {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .about-logo {
+        display: none;
+    }
 }
 
 @media print,
