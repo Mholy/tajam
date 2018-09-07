@@ -193,11 +193,10 @@ a {
 =            header            =
 ==============================*/
 .header-top {
-    margin-bottom: 160px;
+    margin-bottom: 155px;
 }
 
 .header-main {
-    height: 670px;
     position: relative;
 
     color: #FFF;
@@ -248,10 +247,11 @@ a {
 
 .header-bottom {
     text-align: center;
+    padding-bottom: 205px;
 }
 
 .header-bottom h1 {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .header-bottom p {
@@ -266,8 +266,8 @@ a {
 }
 
 .header-bottom p {
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 45px;
 }
 
 .slider-nav {
@@ -447,7 +447,6 @@ a {
 
 .teams figure {
     margin: 0;
-    width: 220px;
     cursor: pointer;
 }
 
@@ -512,13 +511,15 @@ a {
 ======================================*/
 
 .people {
-    height: 500px;
     padding: 70px 0;
     text-align: center;
     color: #FFF;
     background-image: linear-gradient(to right, rgba(9,5,47,.85),rgba(49,29,94,.85)), url(../img/image-people.jpg);
     background-repeat: no-repeat no-repeat;
     background-position: center center;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
 }
 
 .people-quote {
@@ -628,6 +629,9 @@ a {
     background-image: linear-gradient(to right, rgba(9,5,47,.85),rgba(49,29,94,.85)), url(../img/image-footer.jpg);
     background-repeat: no-repeat no-repeat;
     background-position: center center;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
 }
 
 .logo-footer {
@@ -711,15 +715,18 @@ a {
 
 .footer-bottom-line {
     margin-top: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-weight: 400;
     letter-spacing: 0.35px;
     line-height: 26px;
 }
 
-.footer-bottom-line p {
+.copyright {
     float: right;
 }
 .footer-menu {
+    float: left;
     margin: 0;
     padding: 0;
 }
@@ -834,11 +841,42 @@ a {
     .container-center {
         width: auto;
     }
+
+    .contact-clients div {
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-clients {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 568px) {
     .about-logo {
         display: none;
+    }
+
+    .expertise-item p {
+        display: none;
+    }
+
+    .works-images div div:nth-last-child(-n+6) {
+        display: none;
+    }
+
+    .people-select a:nth-child(2),
+    .people-select a:nth-child(3),
+    .people-select a:nth-child(5),
+    .people-select a:nth-child(6)
+     {
+        display: none;
+    }
+
+    .footer-menu,
+    .copyright {
+        float: none;
     }
 }
 
