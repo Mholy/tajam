@@ -186,6 +186,35 @@ a {
     padding: 0 30px;
 }
 
+.btn-hamburger{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 80px;
+    background: none;
+    color: #FFF;
+    border: 0;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000000000000;
+}
+.btn-cross{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    line-height: 100px;
+    background: none;
+    color: #FFF;
+    border: 0;
+    font-size: 4em;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000000000000;
+}
+
 /*=====  End of Buttons  ======*/
 
 
@@ -218,6 +247,7 @@ a {
 
 .header-menu {
     display: block;
+    position: relative;
     float: right;
     margin-top: 35px;
 }
@@ -368,7 +398,8 @@ a {
 .expertise-heading span {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
-    line-height: 45px;
+    display: block;
+    margin: 15px 0;
     color: #2F2D35;
     color: rgba(47,45,53,.75);
 }
@@ -435,7 +466,8 @@ a {
 .teams-heading span {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
-    line-height: 45px;
+    display: block;
+    margin: 15px 0;
     color: #F9F9F9;
 }
 
@@ -851,15 +883,51 @@ a {
     .contact-clients {
         display: none;
     }
-}
+
+    .btn-hamburger {
+        display: block;
+    }
+
+    .header-menu {
+        display: none;
+        margin-right: 50px;
+        margin-top: 35px;
+    }
+
+    .header-menu li {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
 
 @media only screen and (max-width: 568px) {
     .about-logo {
         display: none;
     }
 
-    .expertise-item p {
+    .expertise {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .expertise-item p,
+    .expertise-item h3 {
         display: none;
+    }
+
+    .teams-members figcaption {
+        display: none;
+    }
+
+    .works-heading h2,
+    .works-heading a {
+        display: block;
+        float: none;
+        text-align: initial;
+    }
+
+    .works-heading a {
+        margin-top: 15px;
     }
 
     .works-images div div:nth-last-child(-n+6) {
